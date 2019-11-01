@@ -23,7 +23,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" >
-
+        <h1>Top Womans Players</h1>
+        <div className='list'>
+          <ol>
+            {this.state.players.map(player => (
+              <li clasnnName='list-item'>{player.name} from {player.country}, {player.searches} searches</li>
+            ))}
+          </ol>
+        </div>
       </div>
     );
   }
