@@ -8,6 +8,7 @@ export default function DarkmodeButton(props) {
     const toggle = e => {
         e.preventDefault();
         setDarkMode(!darkMode);
+
     };
 
     return (
