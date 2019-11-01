@@ -23,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" >
-        <h1>Top Womans Players</h1>
+        <h1>Womans World Cup Popular Players</h1>
         <div className='list'>
           <ol>
             {this.state.players.map(player => (
