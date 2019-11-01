@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import Dark from './components/DarkmodeButton';
 import './App.css';
 
 class App extends React.Component {
@@ -24,6 +24,7 @@ class App extends React.Component {
     return (
       <div className="App" >
         <h1>Womans World Cup Popular Players</h1>
+        <Dark />
         <div className='list'>
           <ol>
             {this.state.players.map(player => (
